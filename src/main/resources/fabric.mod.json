@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bustlingbeaches",
+	"version": "${version}",
+	"name": "Bustling Beaches",
+	"description": "Beach Overhaul",
+	"authors": [
+		"Wildfire Studios"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bustlingbeaches/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wildfire.bustlingbeaches.BustlingBeaches"
+		],
+		"client": [
+			"com.wildfire.bustlingbeaches.BustlingBeachesClient"
+		],
+		"fabric-datagen": [
+			"com.wildfire.bustlingbeaches.BustlingBeachesDataGenerator"
+		]
+	},
+	"mixins": [
+		"bustlingbeaches.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
